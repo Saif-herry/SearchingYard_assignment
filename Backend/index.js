@@ -6,10 +6,17 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.listen(8080,()=>{
+app.get("/",(req,res)=>{
+    res.send("Welcome In Searching-yard world")
+})
+
+const connection = require('./config')
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT,async()=>{
     try{
-     
-console.log('db connected')
+     await connection
+    console.log('db connected')
     }
     catch(err){
         console.log('check config',err)
