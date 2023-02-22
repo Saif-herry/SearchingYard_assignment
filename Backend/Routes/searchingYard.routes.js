@@ -13,6 +13,17 @@ SearchingYardRouter.get('/get',async(req,res)=>{
     }
 })
 
+SearchingYardRouter.get('/get/:id',async(req,res)=>{
+    const userId = req.params.id;
+    try{
+            const user = await SearchingYardModel.findById({_id:userId});
+            res.status(200).send(user)
+       }
+       catch(err){
+           res.status(500).send({message:err.message})
+       }
+})
+
 
 SearchingYardRouter.post('/post',async(req,res)=>{
     const {date} = req.body
