@@ -11,6 +11,10 @@ app.get("/",(req,res)=>{
 })
 
 const connection = require('./config')
+
+const SearchingYard = require('./Routes/searchingYard.routes')
+app.use('/searchingYard',SearchingYard)
+
 const PORT = process.env.PORT || 8080
 
 app.listen(PORT,async()=>{

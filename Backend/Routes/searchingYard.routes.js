@@ -5,18 +5,26 @@ const SearchingYardRouter = express.Router()
 
 SearchingYardRouter.get('/get',async(req,res)=>{
     try{
-         const user = SearchingYardModel.find()
+         const user =await SearchingYardModel.find()
          res.status(200).send(user)
     }
     catch(err){
-        res.status(500).send({message:err.message})
+        res.status(500).send("errer aa gya")
     }
 })
 
 
 SearchingYardRouter.post('/post',async(req,res)=>{
+    const {date} = req.body
+    console.log("user date",date)
+    const user =await SearchingYardModel.findOne({date})
+    console.log("db date",user)
+    if(user){
+       return res.send({message:'this date data is already present'})
+    }
+
     try{
-       const user = SearchingYardModel.create(req.body)
+       const user =await SearchingYardModel.create(req.body)
        user.save()
        res.status(200).send(user)
     }
@@ -24,4 +32,7 @@ SearchingYardRouter.post('/post',async(req,res)=>{
         res.status(500).send({message:err.message})
     }
 })
+
+
+
 module.exports = SearchingYardRouter

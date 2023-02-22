@@ -5,7 +5,7 @@ const searchingyardSchema = new mongoose.Schema({
 "copyright":String,
 "date":{type:String,required:true},
 "explanation":{type:String,required:true},
-"hdurl":{type:String,required:true},
+"hdurl":{type:String,required:false},
 "media_type":{type:String,required:true},
 "service_version":{type:String,required:true},
 "title":{type:String,required:true},
