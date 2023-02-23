@@ -3,9 +3,12 @@ const express = require('express')
 const SearchingYardModel = require('../Model/serchingYard.model')
 const SearchingYardRouter = express.Router()
 
+// db.students.find({},{_id:0}).sort({course:1})
+
 SearchingYardRouter.get('/get', async (req, res) => {
   try {
     const user = await SearchingYardModel.find()
+    user.find({}).sort({date:1})
     res.status(200).send(user)
   } catch (err) {
     res.status(500).send('errer aa gya')
