@@ -20,18 +20,15 @@ const Apod = () => {
       : time_data.getMonth() + 1) +
     '-' +
     time_data.getDate()
-  // console.log('dateee', date)
+  console.log('dateee', date)
   const nasaapi = `https://api.nasa.gov/planetary/apod?api_key=JeD3EqEdP0z2MiyGjnhYoFlmXDGUI9DVbXjLBoMW&start_date=${date}`
 
   useEffect(() => {
     axios.get(api).then((res) => {
       let a = res.data
-      a.sort((a, b) => b.date - a.date)
       console.log(a)
       setData(a)
     })
-
-    // .then((d) => setData(d))
   }, [])
 
   function saveNasaApiToBackend(nasa_api_data) {
@@ -45,7 +42,7 @@ const Apod = () => {
     console.log('nasaapi-length', nasaData.length)
 
     axios.get(nasaapi).then((res) => {
-      setnasaData(res.data)
+      setnasaData(res.data[0])
       // console.log('nasaapi response', res.data[0])
       saveNasaApiToBackend(res.data[0])
     })
@@ -53,7 +50,7 @@ const Apod = () => {
 
   console.log(
     'backend-data',
-    data.sort((a, b) => a - b),
+    data
   )
 
   let data1 = data.filter((item) => {
@@ -68,7 +65,7 @@ const Apod = () => {
       <div className="HeadIdContainer">
         <div>
           {' '}
-          <Link to="/cos">Discover the cosmos!</Link>
+          <span><Link to="/cos">Discover the cosmos!</Link></span>
         </div>
         <div>
           <p>
@@ -84,8 +81,8 @@ const Apod = () => {
             return (
               <div>
                 <div key={item._id} className="featchDataIddatImg">
-                  <p style={{ marginTop: '10px' }}>{item.date}</p>
-                  <img className="IdImg" src={item.hdurl} alt="" />
+                  <p style={{ marginTop: '-2px',fontSize:"1px" }}>{item.date}</p>
+                  <img className="IdImg" style={{margin:"-17px"}} src={item.hdurl} alt="" />
                   <p>{item.title}</p>
                   <p style={{ marginTop: '-15px' }}>
                     Image Credit &{' '}

@@ -5,7 +5,7 @@ const SimpleNav = () => {
   return (
     <div className='SimpleNavContainer'>
       <div className="NavLinks">
-        |<Link to="/ind">index</Link>|
+        |<Link to="/ind">Index</Link>|
         <Link to="/sea">Search</Link>|
         <Link to="/">Today's Picture </Link>|
       

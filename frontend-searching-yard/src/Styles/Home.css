@@ -1,6 +1,6 @@
 .HeadIdContainer{
     display: flex;
-    /* font-size: 15px; */
+    font-size: 15px;
     align-items: center;
     justify-content: center;
     gap: 3px;
@@ -13,13 +13,15 @@
 }
 .classofhead{
     text-align: center;
+    font-size: 14px;
 }
 .IdImg{
-    width: 60%;
+    width: 65%;
 }
 .featchDataIddatImg{
     text-align: center;
     font-weight: 700;
+    
 }
 
 
