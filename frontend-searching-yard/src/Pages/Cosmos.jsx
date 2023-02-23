@@ -1,14 +1,18 @@
 import React from 'react'
 import {useState,useEffect} from "react"
 import axios from "axios"
-
+import {Link} from "react-router-dom"
+import "../Styles/Cosmos.css"
+import Header from '../Components/Header'
+import SimpleNav from '../Components/SimpleNav'
+import Footer from '../Components/Footer'
 const Cosmos = () => {
     const [data,setData] = useState([])
 
 
 console.log("data",data)
 
-const api="http://localhost:8080/searchingYard/get"
+const api="https://lazy-jade-octopus-tie.cyclic.app/searchingYard/get"
 const time_data = new Date()
         const date = time_data.getFullYear() + "-" + ((time_data.getMonth()+1)<10?("0"+(time_data.getMonth()+1)):(time_data.getMonth()+1)) + "-" + time_data.getDate();
         console.log("dateee",date)
@@ -22,14 +26,32 @@ const time_data = new Date()
   })
   console.log("data1--",data1)
   return (
-    <div><h1>Cosmos</h1>
+    <div>
+       <div className="headerMain">
+                <Header/>
+              </div>
+              <hr />
+              <div className="MainNavContain">
+                <SimpleNav/>
+              </div>
+              <hr />
+              <div className="secheader">Some versions of Chrome are having trouble pre-fetching the links on this page and freezing.</div>
+              <hr />
         {
           data.map((item)=>{
-            return <div key={item._id}>
-              <p>{item.title}</p>
+            return <div key={item._id} >
+             
+               <div className='DateAndName'>
+             <div className='dateDAta'>{item.date}</div> : 
+            <Link activeclassname='is-active' to={`/home/${item._id}`}><div className='nameDAta'> {item.title}</div></Link>
             </div> 
+            </div>
           })
         }
+        <hr />
+        <div className="fotterCon">
+          <Footer/>
+        </div>
     </div>
   )
 }
