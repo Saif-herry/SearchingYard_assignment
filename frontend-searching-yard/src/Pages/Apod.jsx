@@ -57,14 +57,10 @@ const Apod = () => {
         <h1>Astronomy Picture of the Day</h1>
       </div>
       <div className="HeadIdContainer">
-        <div>
-          {' '}
-          <span>
-            <Link to="/cos">Discover the cosmos!</Link>
-          </span>
-        </div>
+        
         <div>
           <p>
+          <Link to="/cos">Discover the cosmos!</Link>
             Each day a different image or photograph of our fascinating universe
             is featured, along with a brief explanation written by a
             professional astronomer.
@@ -85,9 +81,9 @@ const Apod = () => {
                     alt=""
                   />
                   <p>{item.title}</p>
-                  <p style={{ marginTop: '-15px' }}>
+                  <p className='Copyright_text_for_mq' style={{ marginTop: '-15px' }}>
                     Image Credit &{' '}
-                    <Link to="https://apod.nasa.gov/apod/lib/about_apod.html#srapply">
+                    <Link >
                       @Copyright : {item.copyright}
                     </Link>{' '}
                   </p>
@@ -129,9 +125,10 @@ const Apod = () => {
                     alt=""
                   />
                   <p>{item.title}</p>
-                  <p style={{ marginTop: '-15px' }}>
+                  
+                  <p className='Copyright_text_for_mq' style={{ marginTop: '-15px' }}>
                     Image Credit &{' '}
-                    <Link to="https://apod.nasa.gov/apod/lib/about_apod.html#srapply">
+                    <Link >
                       @Copyright : {item.copyright}
                     </Link>{' '}
                   </p>

@@ -33,3 +33,81 @@
 .tommarowPic {
   text-align: center;
 }
+
+
+@media screen and (max-width :420px) {
+  .HeadIdContainer {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+ 
+  }
+  .IdContainer {
+    width: 100%;
+    font-size: 14px;
+  }
+  .classofhead {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+  }
+  .IdImg {
+    width: 98%;
+  }
+
+  .Copyright_text_for_mq{ 
+    padding-top: 15px;
+    font-size: 17px;
+  }
+  .Explaination {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .tommarowPic {
+    text-align: center;
+    font-size: 20px;
+  }
+  .FooterContainer>p{
+    padding-top: 6px;
+  }
+  .FooterContainer>p:first-child{
+    font-size: 13px;
+  }
+}
+
+
+
+@media screen and (min-width :420px) and (max-width:768px){
+  .HeadIdContainer {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
+  .IdContainer {
+    font-size: 15px;
+  }
+  .classofhead {
+    font-size: 18px;
+    width: 100%;
+  }
+  .IdImg {
+    width: 98%;
+  }
+
+  .Copyright_text_for_mq{ 
+    padding-top: 15px;
+    font-size: 19px;
+  }
+  .Explaination {
+    font-size: 20px;
+  }
+  .tommarowPic {
+    font-size: 22px;
+  }
+  .FooterContainer>p{
+    padding-top: 6px;
+  }
+  .FooterContainer>p:first-child{
+    font-size: 17px;
+  }
+}

@@ -4,3 +4,14 @@
   gap: 8px;
   justify-content: center;
 }
+
+@media screen and (max-width : 420px){
+  .NavLinksfooter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+  }
+}
