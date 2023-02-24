@@ -1,8 +1,8 @@
-import React from "react";
-import IndexPageNav from "../Components/IndexPageNav";
-import "../Styles/index.css";
-import { Link } from "react-router-dom";
-import Footer from "../Components/Footer";
+import React from 'react'
+import IndexPageNav from '../Components/IndexPageNav'
+import '../Styles/index.css'
+import { Link } from 'react-router-dom'
+import Footer from '../Components/Footer'
 const Index = () => {
   return (
     <div className="IndexContainer">
@@ -10,13 +10,13 @@ const Index = () => {
         <div>
           <img
             src="https://apod.nasa.gov/apod/apod.gif"
-            style={{ marginTop: "9px" }}
+            style={{ marginTop: '9px' }}
             alt=""
           />
         </div>
         <div>
           <h1>Astronomy Picture of the Day</h1>
-          <h1 style={{ marginTop: "-19px" }}>Index - Main Page</h1>
+          <h1 style={{ marginTop: '-19px' }}>Index - Main Page</h1>
         </div>
       </div>
       <hr />
@@ -46,7 +46,7 @@ const Index = () => {
         <div className="startsText">
           <div className="starsdiv">
             <span>Stars :</span>
-            <Link to=""> Binary Stars </Link> *<Link to=""> Black Holes </Link>{" "}
+            <Link to=""> Binary Stars </Link> *<Link to=""> Black Holes </Link>{' '}
             *<Link to=""> Globular Clusters </Link> *
             <Link to=""> Individual Stars </Link> *
             <Link to=""> Neutron Stars </Link> *<Link to=""> Nurseries </Link> *
@@ -100,15 +100,15 @@ const Index = () => {
           </div>
         </div>
         <div className="SecondSectionimg">
-          <p style={{ fontSize: "27px" }}> Solar System</p>&nbsp;
+          <p style={{ fontSize: '27px' }}> Solar System</p>&nbsp;
           <img
             src="https://apod.nasa.gov/apod/calendar/S_971029.jpg"
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: '70px', height: '70px' }}
             alt=""
-          />{" "}
+          />{' '}
           &nbsp;
           <img
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: '70px', height: '70px' }}
             src="https://apod.nasa.gov/apod/calendar/S_960501.jpg"
             alt=""
           />
@@ -118,11 +118,11 @@ const Index = () => {
       <div className="ThirdSection">
         <div className="ThirdSectionimg">
           <img
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: '70px', height: '70px' }}
             src="https://apod.nasa.gov/apod/calendar/S_960210.jpg"
             alt=""
           />
-          <p style={{ fontSize: "27px" }}>Space Technology</p>
+          <p style={{ fontSize: '27px' }}>Space Technology</p>
         </div>
         <div className="ThirdSectiontext">
           <Link to=""> Rockets/Launch Vehicles </Link>*
@@ -137,9 +137,9 @@ const Index = () => {
           <Link to="">Scientists</Link>*<Link to=""> Astronauts</Link>*
         </div>
         <div className="ThirdSectionimg">
-          <p style={{ fontSize: "27px" }}>Space Technology</p> &nbsp;
+          <p style={{ fontSize: '27px' }}>Space Technology</p> &nbsp;
           <img
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: '70px', height: '70px' }}
             src="https://apod.nasa.gov/apod/calendar/S_971011.jpg"
             alt=""
           />
@@ -148,26 +148,25 @@ const Index = () => {
       <hr />
 
       <div className="ThirdSection">
-      <div className="ThirdSectionimg">
-         
+        <div className="ThirdSectionimg">
           <img
-            style={{ width: "70px", height: "70px" }}
+            style={{ width: '70px', height: '70px' }}
             src="https://apod.nasa.gov/apod/calendar/S_970809.jpg"
             alt=""
-          />&nbsp;
-           <p style={{ fontSize: "27px" }}>Sky</p> 
+          />
+          &nbsp;
+          <p style={{ fontSize: '27px' }}>Sky</p>
         </div>
         <div className="ThirdSectiontext">
           <Link to="">Messier Objects</Link>*<Link to=""> Sky Views</Link>*
         </div>
-        
       </div>
       <hr />
       <div className="FooterSection">
-        <Footer/>
+        <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

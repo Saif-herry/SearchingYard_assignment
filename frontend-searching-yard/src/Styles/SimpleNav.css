@@ -1,12 +1,12 @@
-.SimpleNavContainer{
-    width: 100%;
-    /* background-color: bisque; */
+.SimpleNavContainer {
+  width: 100%;
+  /* background-color: bisque; */
 }
 
-.NavLinks{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* font-weight: bold; */
-    font-size: 17px;
+.NavLinks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* font-weight: bold; */
+  font-size: 17px;
 }

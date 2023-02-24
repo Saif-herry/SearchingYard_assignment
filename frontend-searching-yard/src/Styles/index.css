@@ -1,77 +1,56 @@
-.indexHeadder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+.indexHeadder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
-.firstSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 220px;
+.firstSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 220px;
 }
 
-.startsText{
-    display: flex;
-    flex-direction: column;
-    row-gap: 18px;
-    font-weight: bold;
-    /* font-size: 18px; */
+.startsText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  font-weight: bold;
+  /* font-size: 18px; */
 }
 
-.SeconSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+.SeconSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
-.SecondSectionimg{
-    display: flex;
-    align-items: center;
+.SecondSectionimg {
+  display: flex;
+  align-items: center;
 }
 
-
-.SecondSectionText{
-    display: flex;
-    flex-direction: column;
-    row-gap: 18px;
+.SecondSectionText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
 }
 
-.ThirdSection{
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+.ThirdSection {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.ThirdSectionimg{
-    display: flex;
-    /* align-items: center; */
-    
+.ThirdSectionimg {
+  display: flex;
+  /* align-items: center; */
 }
-.FooterSection{
-    text-align: center;
+.FooterSection {
+  text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

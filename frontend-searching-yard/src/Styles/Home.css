@@ -1,34 +1,35 @@
-.HeadIdContainer{
-    display: flex;
-    font-size: 15px;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    width: 100%;
-    margin-top: -20px;
+.HeadIdContainer {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+  margin-top: -20px;
 }
 
-.IdContainer{
-    width: 100%;
+.IdContainer {
+  width: 100%;
+  font-size: 14px;
 }
-.classofhead{
-    text-align: center;
-    font-size: 14px;
+.classofhead {
+  text-align: center;
+  font-size: 14px;
 }
-.IdImg{
-    width: 65%;
+.IdImg {
+  width: 65%;
 }
-.featchDataIddatImg{
-    text-align: center;
-    font-weight: 700;
-    
+.featchDataIddatImg {
+  text-align: center;
+  font-weight: 700;
 }
 
-
-.Explaination{
-    text-align: justify;
-    padding:15px;
+.Explaination {
+  text-align: justify;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 18px;
 }
-.tommarowPic{
-    text-align:center;
+.tommarowPic {
+  text-align: center;
 }
